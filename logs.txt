@@ -1,0 +1,1007 @@
+I0513 11:00:30.794453    5741 backend.go:420] found username for access token
+I0513 11:00:31.718896    5741 backend.go:420] found username for access token
+I0513 11:00:31.952739    5741 ignore.go:44] Explicitly ignoring and discarding error: no git repository found from /Users/piers/github.com/pierskarsenbarg/scratchpad/azure-webapp-credentials/Pulumi.yaml
+I0513 11:00:32.819865    5741 update.go:192] *** Starting Update(preview=true) ***
+I0513 11:00:32.820450    5741 plugins.go:76] gatherPluginsFromProgram(): gathering plugins from language host
+I0513 11:00:32.821481    5741 plugins.go:1057] GetPluginPath(language, dotnet, <nil>): found on $PATH /opt/pulumi/bin/pulumi-language-dotnet
+I0513 11:00:32.821675    5741 plugin.go:184] Launching plugin 'dotnet' from '/opt/pulumi/bin/pulumi-language-dotnet' with args: -root=/Users/piers/github.com/pierskarsenbarg/scratchpad/azure-webapp-credentials,127.0.0.1:49819
+I0513 11:00:32.843366    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:32.843051    5749 main.go:79] language host identified executor from path: `/usr/local/share/dotnet/dotnet`
+<{%reset%}>)
+I0513 11:00:32.846546    5741 langruntime_plugin.go:207] langhost[dotnet].GetPluginInfo() executing
+I0513 11:00:32.847266    5741 langruntime_plugin.go:115] langhost[dotnet].GetRequiredPlugins(proj=azure-webapp-credentials,pwd=/Users/piers/github.com/pierskarsenbarg/scratchpad/azure-webapp-credentials,program=.) executing
+I0513 11:00:32.847937    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:32.847854    5749 main.go:134] GetRequiredPlugins: .
+<{%reset%}>)
+I0513 11:00:32.849088    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:32.848855    5749 main.go:382] Language host launching process:  /usr/local/share/dotnet/dotnet build -nologo .
+<{%reset%}>)
+I0513 11:00:32.850039    5741 eventsink.go:70] eventSink::Info(<{%reset%}>running 'dotnet build -nologo .'<{%reset%}>)
+I0513 11:00:33.452792    5741 eventsink.go:70] eventSink::Info(<{%reset%}>  Determining projects to restore...
+<{%reset%}>)
+I0513 11:00:33.765751    5741 eventsink.go:70] eventSink::Info(<{%reset%}>  All projects are up-to-date for restore.
+<{%reset%}>)
+I0513 11:00:34.069630    5741 eventsink.go:70] eventSink::Info(<{%reset%}>  azure-webapp-credentials -> /Users/piers/github.com/pierskarsenbarg/scratchpad/azure-webapp-credentials/bin/Debug/netcoreapp3.1/azure-webapp-credentials.dll
+<{%reset%}>)
+I0513 11:00:34.077242    5741 eventsink.go:70] eventSink::Info(<{%reset%}>
+<{%reset%}>)
+I0513 11:00:34.077742    5741 eventsink.go:70] eventSink::Info(<{%reset%}>Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.01
+<{%reset%}>)
+I0513 11:00:34.092741    5741 eventsink.go:70] eventSink::Info(<{%reset%}>'dotnet build -nologo .' completed successfully<{%reset%}>)
+I0513 11:00:34.092965    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:34.092931    5749 main.go:206] GetRequiredPlugins: Determining pulumi packages
+<{%reset%}>)
+I0513 11:00:34.092999    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:34.092950    5749 main.go:382] Language host launching process:  /usr/local/share/dotnet/dotnet list package --include-transitive
+<{%reset%}>)
+I0513 11:00:35.118194    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.118100    5749 main.go:267] GetRequiredPlugins: Pulumi packages: [][]string{[]string{"Pulumi.AzureNative", "1.64.0"}, []string{"Pulumi.Protobuf", "3.13.0"}}
+<{%reset%}>)
+I0513 11:00:35.118243    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.118145    5749 main.go:275] GetRequiredPlugins: Determining package directory
+<{%reset%}>)
+I0513 11:00:35.118267    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.118153    5749 main.go:382] Language host launching process:  /usr/local/share/dotnet/dotnet nuget locals global-packages --list
+<{%reset%}>)
+I0513 11:00:35.536641    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.536586    5749 main.go:296] GetRequiredPlugins: Package directory: /Users/piers/.nuget/packages/
+<{%reset%}>)
+I0513 11:00:35.536717    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.536605    5749 main.go:304] GetRequiredPlugins: Determining plugin dependency: /Users/piers/.nuget/packages/, Pulumi.AzureNative, 1.64.0
+<{%reset%}>)
+I0513 11:00:35.536736    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.536613    5749 main.go:310] GetRequiredPlugins: version file path: /Users/piers/.nuget/packages/pulumi.azurenative/1.64.0/content/version.txt
+<{%reset%}>)
+I0513 11:00:35.536757    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.536682    5749 main.go:353] GetRequiredPlugins: Determining plugin dependency: pulumirpc.PluginDependency{Name:"azure-native", Kind:"resource", Version:"v1.64.0", Server:"", XXX_NoUnkeyedLiteral:struct {}{}, XXX_unrecognized:[]uint8(nil), XXX_sizecache:0}
+<{%reset%}>)
+I0513 11:00:35.536770    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.536725    5749 main.go:304] GetRequiredPlugins: Determining plugin dependency: /Users/piers/.nuget/packages/, Pulumi.Protobuf, 3.13.0
+<{%reset%}>)
+I0513 11:00:35.536778    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.536736    5749 main.go:310] GetRequiredPlugins: version file path: /Users/piers/.nuget/packages/pulumi.protobuf/3.13.0/content/version.txt
+<{%reset%}>)
+I0513 11:00:35.536788    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.536747    5749 main.go:316] GetRequiredPlugins: No such file
+<{%reset%}>)
+I0513 11:00:35.537139    5741 langruntime_plugin.go:157] langhost[dotnet].GetRequiredPlugins(proj=azure-webapp-credentials,pwd=/Users/piers/github.com/pierskarsenbarg/scratchpad/azure-webapp-credentials,program=.) success: #versions=1
+I0513 11:00:35.537170    5741 plugins.go:88] gatherPluginsFromProgram(): plugin dotnet <nil> () is required by language host
+I0513 11:00:35.537191    5741 plugins.go:88] gatherPluginsFromProgram(): plugin azure-native 1.64.0 () is required by language host
+I0513 11:00:35.537206    5741 plugins.go:100] gatherPluginsFromSnapshot(): gathering plugins from snapshot
+I0513 11:00:35.537214    5741 plugins.go:109] gatherPluginsFromSnapshot(): skipping "urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev", not a provider
+I0513 11:00:35.537229    5741 plugins.go:121] gatherPluginsFromSnapshot(): plugin azure-native 1.64.0 is required by first-class provider "urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0"
+I0513 11:00:35.537243    5741 plugins.go:109] gatherPluginsFromSnapshot(): skipping "urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup", not a provider
+I0513 11:00:35.537251    5741 plugins.go:137] ensurePluginsAreInstalled(): beginning
+I0513 11:00:35.537292    5741 plugins.go:1057] GetPluginPath(language, dotnet, <nil>): found on $PATH /opt/pulumi/bin/pulumi-language-dotnet
+I0513 11:00:35.537303    5741 plugins.go:142] ensurePluginsAreInstalled(): plugin dotnet <nil> already installed
+I0513 11:00:35.539884    5741 plugins.go:1098] GetPluginPath(resource, azure-native, 1.64.0): enabling new plugin behavior
+I0513 11:00:35.539931    5741 plugins.go:1184] SelectCompatiblePlugin(..., azure-native): beginning
+I0513 11:00:35.539970    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.4.0: semver mismatch
+I0513 11:00:35.539978    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.6.0: semver mismatch
+I0513 11:00:35.539984    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.7.0: semver mismatch
+I0513 11:00:35.539990    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.9.0: semver mismatch
+I0513 11:00:35.539997    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.15.0: semver mismatch
+I0513 11:00:35.540003    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.16.0: semver mismatch
+I0513 11:00:35.540030    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.19.0: semver mismatch
+I0513 11:00:35.540036    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.23.0: semver mismatch
+I0513 11:00:35.540049    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.30.0: semver mismatch
+I0513 11:00:35.540056    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.35.0: semver mismatch
+I0513 11:00:35.540062    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.41.0: semver mismatch
+I0513 11:00:35.540068    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.43.0: semver mismatch
+I0513 11:00:35.540074    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.44.0: semver mismatch
+I0513 11:00:35.540080    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.45.0: semver mismatch
+I0513 11:00:35.540085    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.46.0: semver mismatch
+I0513 11:00:35.540091    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.47.0: semver mismatch
+I0513 11:00:35.540097    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.53.0: semver mismatch
+I0513 11:00:35.540105    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.54.0: semver mismatch
+I0513 11:00:35.540110    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.56.0: semver mismatch
+I0513 11:00:35.540117    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.58.0: semver mismatch
+I0513 11:00:35.540123    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.59.0: semver mismatch
+I0513 11:00:35.540129    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.60.0: semver mismatch
+I0513 11:00:35.540135    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.62.0: semver mismatch
+I0513 11:00:35.540141    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.63.0: semver mismatch
+I0513 11:00:35.540147    5741 plugins.go:1213] SelectCompatiblePlugin(..., azure-native): best plugin azure-native-1.64.0: semver match
+I0513 11:00:35.540156    5741 plugins.go:1226] SelectCompatiblePlugin(..., azure-native): selecting plugin 'azure-native-1.64.0': best match 
+I0513 11:00:35.540172    5741 plugins.go:1145] GetPluginPath(resource, azure-native, 1.64.0): found in cache at /Users/piers/.pulumi/plugins/resource-azure-native-v1.64.0/pulumi-resource-azure-native
+I0513 11:00:35.540182    5741 plugins.go:142] ensurePluginsAreInstalled(): plugin azure-native 1.64.0 already installed
+I0513 11:00:35.540190    5741 plugins.go:157] ensurePluginsAreInstalled(): completed
+I0513 11:00:35.540202    5741 plugins.go:258] computeDefaultProviderPlugins(): considering dotnet
+I0513 11:00:35.540215    5741 plugins.go:261] computeDefaultProviderPlugins(): skipping dotnet, not a resource provider
+I0513 11:00:35.540221    5741 plugins.go:258] computeDefaultProviderPlugins(): considering azure-native-1.64.0
+I0513 11:00:35.540232    5741 plugins.go:289] computeDefaultProviderPlugins(): plugin azure-native-1.64.0 selected for package azure-native (first seen)
+I0513 11:00:35.540239    5741 plugins.go:295] computeDefaultProviderPlugins(): summary of default plugins:
+I0513 11:00:35.540248    5741 plugins.go:297]   azure-native    = 1.64.0
+I0513 11:00:35.540305    5741 registry.go:127] provider(urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev): 
+I0513 11:00:35.542901    5741 plugins.go:1098] GetPluginPath(resource, azure-native, 1.64.0): enabling new plugin behavior
+I0513 11:00:35.542956    5741 plugins.go:1184] SelectCompatiblePlugin(..., azure-native): beginning
+I0513 11:00:35.543010    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.4.0: semver mismatch
+I0513 11:00:35.543042    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.6.0: semver mismatch
+I0513 11:00:35.543048    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.7.0: semver mismatch
+I0513 11:00:35.543054    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.9.0: semver mismatch
+I0513 11:00:35.543061    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.15.0: semver mismatch
+I0513 11:00:35.543067    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.16.0: semver mismatch
+I0513 11:00:35.543073    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.19.0: semver mismatch
+I0513 11:00:35.543079    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.23.0: semver mismatch
+I0513 11:00:35.543085    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.30.0: semver mismatch
+I0513 11:00:35.543118    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.35.0: semver mismatch
+I0513 11:00:35.543124    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.41.0: semver mismatch
+I0513 11:00:35.543130    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.43.0: semver mismatch
+I0513 11:00:35.543140    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.44.0: semver mismatch
+I0513 11:00:35.543147    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.45.0: semver mismatch
+I0513 11:00:35.543175    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.46.0: semver mismatch
+I0513 11:00:35.543180    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.47.0: semver mismatch
+I0513 11:00:35.543186    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.53.0: semver mismatch
+I0513 11:00:35.543192    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.54.0: semver mismatch
+I0513 11:00:35.543198    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.56.0: semver mismatch
+I0513 11:00:35.543204    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.58.0: semver mismatch
+I0513 11:00:35.543241    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.59.0: semver mismatch
+I0513 11:00:35.543247    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.60.0: semver mismatch
+I0513 11:00:35.543252    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.62.0: semver mismatch
+I0513 11:00:35.543258    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.63.0: semver mismatch
+I0513 11:00:35.543264    5741 plugins.go:1213] SelectCompatiblePlugin(..., azure-native): best plugin azure-native-1.64.0: semver match
+I0513 11:00:35.543272    5741 plugins.go:1226] SelectCompatiblePlugin(..., azure-native): selecting plugin 'azure-native-1.64.0': best match 
+I0513 11:00:35.543321    5741 plugins.go:1145] GetPluginPath(resource, azure-native, 1.64.0): found in cache at /Users/piers/.pulumi/plugins/resource-azure-native-v1.64.0/pulumi-resource-azure-native
+I0513 11:00:35.543381    5741 plugin.go:184] Launching plugin 'azure-native (resource)' from '/Users/piers/.pulumi/plugins/resource-azure-native-v1.64.0/pulumi-resource-azure-native' with args: 127.0.0.1:49819
+I0513 11:00:35.603461    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:35.603423    5757 provider.go:1762] AzureNative User Agent: Go/go1.17.9 (amd64-darwin) go-autorest/v14.2.1 pulumi-azure-native/v1.64.0 pid-a90539d8-a7a6-5826-95c4-1fbef22d4b22
+<{%reset%}>)
+I0513 11:00:37.005312    5741 provider_plugin.go:1474] Provider[azure-native, 0xc0015b0360].GetPluginInfo() executing
+I0513 11:00:37.005957    5741 provider_plugin.go:494] Provider[azure-native, 0xc0015b0360].Configure() executing (#vars=2)
+I0513 11:00:37.005994    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Configure().inputs]: location={uksouth}
+I0513 11:00:37.006019    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Configure().inputs]: version={1.64.0}
+I0513 11:00:37.006049    5741 registry.go:162] loaded provider urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93
+I0513 11:00:37.006063    5741 registry.go:127] provider(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup): urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93
+I0513 11:00:37.006410    5741 step_generator.go:1118] stepGenerator.GeneratePendingDeletes(): scanning previous snapshot for pending deletes
+I0513 11:00:37.006437    5741 deployment_executor.go:474] deploymentExecutor.retirePendingDeletes(...): no pending deletions
+I0513 11:00:37.006499    5741 deployment_executor.go:255] deploymentExecutor.Execute(...): waiting for incoming events
+I0513 11:00:37.006512    5741 step_executor.go:364] StepExecutor worker(-2): worker coming online
+I0513 11:00:37.007162    5741 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0513 11:00:37.006475    5741 langruntime_plugin.go:168] langhost[dotnet].Run(pwd=/Users/piers/github.com/pierskarsenbarg/scratchpad/azure-webapp-credentials,program=.,#args=0,proj=azure-webapp-credentials,stack=dev,#config=1,dryrun=true) executing
+I0513 11:00:37.009820    5741 eventsink.go:59] 2022/05/13 11:00:37 Testing if Service Principal / Client Certificate is applicable for Authentication..
+I0513 11:00:37.009860    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>2022/05/13 11:00:37 Testing if Service Principal / Client Certificate is applicable for Authentication..<{%reset%}>)
+I0513 11:00:37.010068    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:37.008751    5749 main.go:518] Language host launching process:  /usr/local/share/dotnet/dotnet run .
+<{%reset%}>)
+I0513 11:00:37.010564    5741 eventsink.go:59] 2022/05/13 11:00:37 Testing if Multi Tenant Service Principal / Client Secret is applicable for Authentication..
+I0513 11:00:37.010595    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>2022/05/13 11:00:37 Testing if Multi Tenant Service Principal / Client Secret is applicable for Authentication..<{%reset%}>)
+I0513 11:00:37.011142    5741 eventsink.go:59] 2022/05/13 11:00:37 Testing if Service Principal / Client Secret is applicable for Authentication..
+I0513 11:00:37.011174    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>2022/05/13 11:00:37 Testing if Service Principal / Client Secret is applicable for Authentication..<{%reset%}>)
+I0513 11:00:37.011824    5741 eventsink.go:59] 2022/05/13 11:00:37 Testing if Managed Service Identity is applicable for Authentication..
+I0513 11:00:37.011853    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>2022/05/13 11:00:37 Testing if Managed Service Identity is applicable for Authentication..<{%reset%}>)
+I0513 11:00:37.012447    5741 eventsink.go:59] 2022/05/13 11:00:37 Testing if Obtaining a token from the Azure CLI is applicable for Authentication..
+I0513 11:00:37.012507    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>2022/05/13 11:00:37 Testing if Obtaining a token from the Azure CLI is applicable for Authentication..<{%reset%}>)
+I0513 11:00:37.013391    5741 eventsink.go:59] 2022/05/13 11:00:37 Using Obtaining a token from the Azure CLI for Authentication
+I0513 11:00:37.013424    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>2022/05/13 11:00:37 Using Obtaining a token from the Azure CLI for Authentication<{%reset%}>)
+I0513 11:00:37.467211    5741 eventsink.go:59] 2022/05/13 11:00:37 Getting OAuth config for endpoint https://login.microsoftonline.com/ with  tenant 706143bc-e1d4-4593-aee2-c9dc60ab9be7
+I0513 11:00:37.467261    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>2022/05/13 11:00:37 Getting OAuth config for endpoint https://login.microsoftonline.com/ with  tenant 706143bc-e1d4-4593-aee2-c9dc60ab9be7<{%reset%}>)
+I0513 11:00:37.983142    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:37.983071    5757 provider.go:1762] AzureNative User Agent: Go/go1.17.9 (amd64-darwin) go-autorest/v14.2.1 pulumi-azure-native/v1.64.0 pid-a90539d8-a7a6-5826-95c4-1fbef22d4b22
+<{%reset%}>)
+I0513 11:00:39.294585    5741 source_eval.go:629] ResourceMonitor.SupportsFeature(id: resourceReferences) = true
+I0513 11:00:39.349742    5741 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=false, #props=0, parent=, protect=false, provider=, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0513 11:00:39.349837    5741 source_eval.go:167] EvalSourceIterator produced a registration: t=pulumi:pulumi:Stack,name=azure-webapp-credentials-dev,#props=0
+I0513 11:00:39.349852    5741 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0513 11:00:39.349862    5741 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0513 11:00:39.349902    5741 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev' after diff (same) (inputs=map[])
+I0513 11:00:39.349922    5741 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0513 11:00:39.349932    5741 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0513 11:00:39.349949    5741 step_executor.go:364] StepExecutor worker(0): launching oneshot worker
+I0513 11:00:39.350009    5741 step_executor.go:364] StepExecutor worker(0): applying step same on urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev (preview true)
+I0513 11:00:39.350028    5741 step_executor.go:364] StepExecutor worker(0): step same on urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev retired
+I0513 11:00:39.350048    5741 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev
+I0513 11:00:39.350062    5741 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=pulumi:pulumi:Stack, urn=urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev, #outs=0
+I0513 11:00:39.358075    5741 source_eval.go:345] handling default provider request for package azure-native-1.64.0
+I0513 11:00:39.358118    5741 source_eval.go:403] checking if azure-native-1.64.0 should be denied
+I0513 11:00:39.358146    5741 source_eval.go:437] Did not find a config for 'pulumi'
+I0513 11:00:39.358156    5741 source_eval.go:293] newRegisterDefaultProviderEvent(azure-native-1.64.0): using version 1.64.0 from request
+I0513 11:00:39.358167    5741 source_eval.go:312] newRegisterDefaultProviderEvent(azure-native-1.64.0): no pluginDownloadURL specified, falling back to default pluginDownloadURL
+I0513 11:00:39.358177    5741 source_eval.go:320] newRegisterDefaultProviderEvent(azure-native-1.64.0): default pluginDownloadURL miss, sending empty string to engine
+I0513 11:00:39.358227    5741 source_eval.go:378] waiting for default provider for package azure-native-1.64.0
+I0513 11:00:39.358241    5741 source_eval.go:167] EvalSourceIterator produced a registration: t=pulumi:providers:azure-native,name=default_1_64_0,#props=2
+I0513 11:00:39.358251    5741 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0513 11:00:39.358258    5741 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0513 11:00:39.358279    5741 registry.go:260] ProviderRegistry.Check(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0) executing (#olds=2,#news=2)
+I0513 11:00:39.361039    5741 plugins.go:1098] GetPluginPath(resource, azure-native, 1.64.0): enabling new plugin behavior
+I0513 11:00:39.361081    5741 plugins.go:1184] SelectCompatiblePlugin(..., azure-native): beginning
+I0513 11:00:39.361121    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.4.0: semver mismatch
+I0513 11:00:39.361128    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.6.0: semver mismatch
+I0513 11:00:39.361135    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.7.0: semver mismatch
+I0513 11:00:39.361141    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.9.0: semver mismatch
+I0513 11:00:39.361147    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.15.0: semver mismatch
+I0513 11:00:39.361153    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.16.0: semver mismatch
+I0513 11:00:39.361159    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.19.0: semver mismatch
+I0513 11:00:39.361166    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.23.0: semver mismatch
+I0513 11:00:39.361172    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.30.0: semver mismatch
+I0513 11:00:39.361179    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.35.0: semver mismatch
+I0513 11:00:39.361185    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.41.0: semver mismatch
+I0513 11:00:39.361191    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.43.0: semver mismatch
+I0513 11:00:39.361200    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.44.0: semver mismatch
+I0513 11:00:39.361206    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.45.0: semver mismatch
+I0513 11:00:39.361212    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.46.0: semver mismatch
+I0513 11:00:39.361218    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.47.0: semver mismatch
+I0513 11:00:39.361223    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.53.0: semver mismatch
+I0513 11:00:39.361229    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.54.0: semver mismatch
+I0513 11:00:39.361235    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.56.0: semver mismatch
+I0513 11:00:39.361241    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.58.0: semver mismatch
+I0513 11:00:39.361246    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.59.0: semver mismatch
+I0513 11:00:39.361252    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.60.0: semver mismatch
+I0513 11:00:39.361279    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.62.0: semver mismatch
+I0513 11:00:39.361286    5741 plugins.go:1217] SelectCompatiblePlugin(..., azure-native): skipping plugin azure-native-1.63.0: semver mismatch
+I0513 11:00:39.361295    5741 plugins.go:1213] SelectCompatiblePlugin(..., azure-native): best plugin azure-native-1.64.0: semver match
+I0513 11:00:39.361303    5741 plugins.go:1226] SelectCompatiblePlugin(..., azure-native): selecting plugin 'azure-native-1.64.0': best match 
+I0513 11:00:39.361320    5741 plugins.go:1145] GetPluginPath(resource, azure-native, 1.64.0): found in cache at /Users/piers/.pulumi/plugins/resource-azure-native-v1.64.0/pulumi-resource-azure-native
+I0513 11:00:39.361331    5741 plugin.go:184] Launching plugin 'azure-native (resource)' from '/Users/piers/.pulumi/plugins/resource-azure-native-v1.64.0/pulumi-resource-azure-native' with args: 127.0.0.1:49819
+I0513 11:00:39.362418    5741 eventsink.go:59] Fields to assign: ["urn","PublishingUserName","PublishingPassword"]
+I0513 11:00:39.362504    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Fields to assign: ["urn","PublishingUserName","PublishingPassword"]<{%reset%}>)
+I0513 11:00:39.366474    5741 eventsink.go:59] Registering resource start: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False
+I0513 11:00:39.366521    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource start: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False<{%reset%}>)
+I0513 11:00:39.368661    5741 eventsink.go:59] Preparing resource: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False
+I0513 11:00:39.368695    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Preparing resource: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False<{%reset%}>)
+I0513 11:00:39.425047    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:39.424945    5770 provider.go:1762] AzureNative User Agent: Go/go1.17.9 (amd64-darwin) go-autorest/v14.2.1 pulumi-azure-native/v1.64.0 pid-a90539d8-a7a6-5826-95c4-1fbef22d4b22
+<{%reset%}>)
+I0513 11:00:40.820153    5741 provider_plugin.go:1474] Provider[azure-native, 0xc0009f4ba0].GetPluginInfo() executing
+I0513 11:00:40.821028    5741 provider_plugin.go:222] Provider[azure-native, 0xc0009f4ba0].CheckConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0) executing (#olds=2,#news=2)
+I0513 11:00:40.821072    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].CheckConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).olds]: location={uksouth}
+I0513 11:00:40.821085    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].CheckConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).olds]: version={1.64.0}
+I0513 11:00:40.821094    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].CheckConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).news]: location={uksouth}
+I0513 11:00:40.821100    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].CheckConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).news]: version={1.64.0}
+I0513 11:00:40.822014    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].CheckConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).inputs]: location={uksouth}
+I0513 11:00:40.822064    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].CheckConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).inputs]: version={1.64.0}
+I0513 11:00:40.822082    5741 provider_plugin.go:285] Provider[azure-native, 0xc0009f4ba0].CheckConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0) success: inputs=#2 failures=#0
+I0513 11:00:40.822118    5741 registry.go:184] setProvider(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0513 11:00:40.822139    5741 registry.go:304] ProviderRegistry.Diff(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0,58de3b2b-e851-443b-b203-bf39ec446d93): executing (#olds=2,#news=2)
+I0513 11:00:40.822146    5741 registry.go:174] GetProvider(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0513 11:00:40.822160    5741 provider_plugin.go:327] Provider[azure-native, 0xc0009f4ba0].DiffConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0) executing (#olds=2,#news=2)
+I0513 11:00:40.822169    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].DiffConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).olds]: location={uksouth}
+I0513 11:00:40.822177    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].DiffConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).olds]: version={1.64.0}
+I0513 11:00:40.822185    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].DiffConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).news]: location={uksouth}
+I0513 11:00:40.822191    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0009f4ba0].DiffConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0).news]: version={1.64.0}
+I0513 11:00:40.822794    5741 provider_plugin.go:394] Provider[azure-native, 0xc0009f4ba0].DiffConfig(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0) success: changes=0 #replaces=[] #stables=[] delbefrepl=false, diffs=#[]
+I0513 11:00:40.822838    5741 registry.go:342] ProviderRegistry.Diff(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0,58de3b2b-e851-443b-b203-bf39ec446d93): executed (1, []resource.PropertyKey(nil))
+I0513 11:00:40.822857    5741 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0' after diff (same) (inputs=map[location:{uksouth} version:{1.64.0}])
+I0513 11:00:40.822888    5741 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0513 11:00:40.822900    5741 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0513 11:00:40.822945    5741 step_executor.go:364] StepExecutor worker(1): launching oneshot worker
+I0513 11:00:40.822977    5741 step_executor.go:364] StepExecutor worker(1): applying step same on urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0 (preview true)
+I0513 11:00:40.822994    5741 registry.go:353] Same(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93)
+I0513 11:00:40.823019    5741 step_executor.go:364] StepExecutor worker(1): step same on urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0 retired
+I0513 11:00:40.823035    5741 source_eval.go:387] registered default provider for package azure-native-1.64.0: urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0
+I0513 11:00:40.823094    5741 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=true, #props=0, parent=urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev, protect=false, provider=urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20151101:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20160201:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20160701:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20160901:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20170510:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20180201:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20180501:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20190301:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20190501:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20190510:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20190701:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20190801:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20191001:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20200601:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20200801:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20201001:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20210101:ResourceGroup::resourceGroup urn:pulumi:dev::azure-webapp-credentials::azure-native:resources/v20210401:ResourceGroup::resourceGroup], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0513 11:00:40.823215    5741 source_eval.go:167] EvalSourceIterator produced a registration: t=azure-native:resources:ResourceGroup,name=resourceGroup,#props=0
+I0513 11:00:40.823242    5741 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0513 11:00:40.823250    5741 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0513 11:00:40.823270    5741 registry.go:174] GetProvider(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93)
+I0513 11:00:40.823294    5741 provider_plugin.go:570] Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup) executing (#olds=3,#news=0
+I0513 11:00:40.823308    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: __createBeforeDelete={true}
+I0513 11:00:40.823327    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: location={uksouth}
+I0513 11:00:40.823334    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.824103    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.823969    5757 provider.go:312] azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup) executing
+<{%reset%}>)
+I0513 11:00:40.824661    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.824401    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: __createBeforeDelete={true}
+<{%reset%}>)
+I0513 11:00:40.824728    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.824436    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.824804    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.824453    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.824829    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.824505    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).resInputs]: __createBeforeDelete={true}
+<{%reset%}>)
+I0513 11:00:40.824864    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.824516    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).resInputs]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.824871    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.824584    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).resInputs]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.825204    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).inputs]: __createBeforeDelete={true}
+I0513 11:00:40.825230    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).inputs]: location={uksouth}
+I0513 11:00:40.825237    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).inputs]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.825246    5741 provider_plugin.go:643] Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup) success: inputs=#3 failures=#0
+I0513 11:00:40.825281    5741 provider_plugin.go:658] Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347): executing (#olds=6,#news=3)
+I0513 11:00:40.825295    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: __inputs={&{{map[__createBeforeDelete:{true} location:{uksouth} resourceGroupName:{resourceGroup592b0347}]}}}
+I0513 11:00:40.825332    5741 rpc.go:183] marshalling secret value as raw value as opts.KeepSecrets is false
+I0513 11:00:40.825341    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: __createBeforeDelete={true}
+I0513 11:00:40.825349    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: location={uksouth}
+I0513 11:00:40.825388    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.825407    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: id={/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347}
+I0513 11:00:40.825419    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: location={uksouth}
+I0513 11:00:40.825426    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: name={resourceGroup592b0347}
+I0513 11:00:40.825432    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: properties={map[provisioningState:{Succeeded}]}
+I0513 11:00:40.825441    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: provisioningState={Succeeded}
+I0513 11:00:40.825448    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).olds]: type={Microsoft.Resources/resourceGroups}
+I0513 11:00:40.825455    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).news]: __createBeforeDelete={true}
+I0513 11:00:40.825461    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).news]: location={uksouth}
+I0513 11:00:40.825467    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347).news]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.826636    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.826137    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: __createBeforeDelete={true}
+<{%reset%}>)
+I0513 11:00:40.826846    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.826152    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.826922    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.826155    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.827019    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.826160    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: __inputs={map[__createBeforeDelete:{true} location:{uksouth} resourceGroupName:{resourceGroup592b0347}]}
+<{%reset%}>)
+I0513 11:00:40.827049    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.826991    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: id={/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.827062    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.827002    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.827075    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.827008    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: name={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.827084    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.827013    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: provisioningState={Succeeded}
+<{%reset%}>)
+I0513 11:00:40.827091    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.827019    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: properties={map[provisioningState:{Succeeded}]}
+<{%reset%}>)
+I0513 11:00:40.827098    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.827026    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).olds]: type={Microsoft.Resources/resourceGroups}
+<{%reset%}>)
+I0513 11:00:40.827110    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.827032    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).news]: __createBeforeDelete={true}
+<{%reset%}>)
+I0513 11:00:40.827117    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.827036    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).news]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.827135    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.827039    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup).news]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.827245    5741 provider_plugin.go:724] Provider[azure-native, 0xc0015b0360].Diff(urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup,/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347) success: changes=1 #replaces=[] #stables=[] delbefrepl=false, diffs=#[], detaileddiff=map[]
+I0513 11:00:40.827298    5741 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup' after diff (same) (inputs=map[__createBeforeDelete:{true} location:{uksouth} resourceGroupName:{resourceGroup592b0347}])
+I0513 11:00:40.827340    5741 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0513 11:00:40.827348    5741 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0513 11:00:40.827361    5741 step_executor.go:364] StepExecutor worker(2): launching oneshot worker
+I0513 11:00:40.827498    5741 step_executor.go:364] StepExecutor worker(2): applying step same on urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup (preview true)
+I0513 11:00:40.827536    5741 step_executor.go:364] StepExecutor worker(2): step same on urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup retired
+I0513 11:00:40.827555    5741 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup
+I0513 11:00:40.827571    5741 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=azure-native:resources:ResourceGroup, urn=urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup, #outs=6
+I0513 11:00:40.827584    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: __inputs={&{{map[__createBeforeDelete:{true} location:{uksouth} resourceGroupName:{resourceGroup592b0347}]}}}
+I0513 11:00:40.827603    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: 4dabf18193072939515e22adb298388d={1b47061264138c4ac30d75fd1eb44270}
+I0513 11:00:40.827611    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: value={map[__createBeforeDelete:{true} location:{uksouth} resourceGroupName:{resourceGroup592b0347}]}
+I0513 11:00:40.827628    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: __createBeforeDelete={true}
+I0513 11:00:40.827634    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: location={uksouth}
+I0513 11:00:40.827640    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.827649    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: id={/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347}
+I0513 11:00:40.827675    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: location={uksouth}
+I0513 11:00:40.827694    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: name={resourceGroup592b0347}
+I0513 11:00:40.827700    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: properties={map[provisioningState:{Succeeded}]}
+I0513 11:00:40.827712    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: provisioningState={Succeeded}
+I0513 11:00:40.827719    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:resources:ResourceGroup,resourceGroup)]: type={Microsoft.Resources/resourceGroups}
+I0513 11:00:40.838514    5741 eventsink.go:59] Fields to assign: ["urn","tags","type","name","id","location","managedBy","properties"]
+I0513 11:00:40.838553    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Fields to assign: ["urn","tags","type","name","id","location","managedBy","properties"]<{%reset%}>)
+I0513 11:00:40.839814    5741 eventsink.go:59] Registering resource start: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False
+I0513 11:00:40.839851    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource start: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.842873    5741 eventsink.go:59] Preparing resource: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False
+I0513 11:00:40.842914    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Preparing resource: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.845259    5741 eventsink.go:59] Prepared resource: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False
+I0513 11:00:40.845299    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Prepared resource: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False<{%reset%}>)
+I0513 11:00:40.846254    5741 eventsink.go:59] Registering resource monitor start: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False
+I0513 11:00:40.846294    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor start: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False<{%reset%}>)
+I0513 11:00:40.858207    5741 source_eval.go:345] handling default provider request for package azure-native-1.64.0
+I0513 11:00:40.858245    5741 source_eval.go:403] checking if azure-native-1.64.0 should be denied
+I0513 11:00:40.858253    5741 source_eval.go:437] Did not find a config for 'pulumi'
+I0513 11:00:40.858266    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: hyperV={false}
+I0513 11:00:40.858320    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: isXenon={false}
+I0513 11:00:40.858326    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: perSiteScaling={false}
+I0513 11:00:40.858332    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: reserved={false}
+I0513 11:00:40.858338    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.858344    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: name={Y1}
+I0513 11:00:40.858352    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: tier={Dynamic}
+I0513 11:00:40.858360    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: sku={map[name:{Y1} tier:{Dynamic}]}
+I0513 11:00:40.858381    5741 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=true, #props=6, parent=urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev, protect=false, provider=urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93, deps=[urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20150801:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20160901:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20180201:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20190801:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20200601:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20200901:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20201001:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20201201:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20210101:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20210115:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20210201:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20210301:AppServicePlan::functionApp-appService], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0513 11:00:40.858449    5741 source_eval.go:167] EvalSourceIterator produced a registration: t=azure-native:web:AppServicePlan,name=functionApp-appService,#props=6
+I0513 11:00:40.858464    5741 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0513 11:00:40.858470    5741 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0513 11:00:40.858486    5741 registry.go:174] GetProvider(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93)
+I0513 11:00:40.858500    5741 provider_plugin.go:570] Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService) executing (#olds=0,#news=6
+I0513 11:00:40.858516    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: hyperV={false}
+I0513 11:00:40.858525    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: isXenon={false}
+I0513 11:00:40.858538    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: perSiteScaling={false}
+I0513 11:00:40.858544    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: reserved={false}
+I0513 11:00:40.858550    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.858559    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: sku={map[name:{Y1} tier:{Dynamic}]}
+I0513 11:00:40.858574    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: name={Y1}
+I0513 11:00:40.858580    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: tier={Dynamic}
+I0513 11:00:40.859338    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859291    5757 provider.go:312] azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService) executing
+<{%reset%}>)
+I0513 11:00:40.859401    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859315    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: hyperV={false}
+<{%reset%}>)
+I0513 11:00:40.859417    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859326    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: isXenon={false}
+<{%reset%}>)
+I0513 11:00:40.859424    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859329    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: perSiteScaling={false}
+<{%reset%}>)
+I0513 11:00:40.859438    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859332    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: reserved={false}
+<{%reset%}>)
+I0513 11:00:40.859446    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859336    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.859464    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859339    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: name={Y1}
+<{%reset%}>)
+I0513 11:00:40.859471    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859343    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: tier={Dynamic}
+<{%reset%}>)
+I0513 11:00:40.859480    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859359    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).news]: sku={map[name:{Y1} tier:{Dynamic}]}
+<{%reset%}>)
+I0513 11:00:40.860051    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859960    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: __createBeforeDelete={true}
+<{%reset%}>)
+I0513 11:00:40.860081    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859973    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: hyperV={false}
+<{%reset%}>)
+I0513 11:00:40.860090    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859976    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: isXenon={false}
+<{%reset%}>)
+I0513 11:00:40.860097    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859979    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.860113    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859982    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: name={functionApp-appService1870875d}
+<{%reset%}>)
+I0513 11:00:40.860139    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859985    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: perSiteScaling={false}
+<{%reset%}>)
+I0513 11:00:40.860147    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859988    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: reserved={false}
+<{%reset%}>)
+I0513 11:00:40.860162    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859990    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.860170    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.859993    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: sku={map[name:{Y1} tier:{Dynamic}]}
+<{%reset%}>)
+I0513 11:00:40.860186    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.860002    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: name={Y1}
+<{%reset%}>)
+I0513 11:00:40.860194    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.860011    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).resInputs]: tier={Dynamic}
+<{%reset%}>)
+I0513 11:00:40.860531    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: __createBeforeDelete={true}
+I0513 11:00:40.860561    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: hyperV={false}
+I0513 11:00:40.860568    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: isXenon={false}
+I0513 11:00:40.860574    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: location={uksouth}
+I0513 11:00:40.860580    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: name={functionApp-appService1870875d}
+I0513 11:00:40.860586    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: perSiteScaling={false}
+I0513 11:00:40.860592    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: reserved={false}
+I0513 11:00:40.860604    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.860610    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: name={Y1}
+I0513 11:00:40.860624    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: tier={Dynamic}
+I0513 11:00:40.860632    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: sku={map[name:{Y1} tier:{Dynamic}]}
+I0513 11:00:40.860649    5741 provider_plugin.go:643] Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService) success: inputs=#9 failures=#0
+I0513 11:00:40.860663    5741 step_generator.go:675] Planner decided to create 'urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService' (inputs=map[__createBeforeDelete:{true} hyperV:{false} isXenon:{false} location:{uksouth} name:{functionApp-appService1870875d} perSiteScaling:{false} reserved:{false} resourceGroupName:{resourceGroup592b0347} sku:{map[name:{Y1} tier:{Dynamic}]}])
+I0513 11:00:40.860723    5741 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0513 11:00:40.860732    5741 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0513 11:00:40.860747    5741 step_executor.go:364] StepExecutor worker(3): launching oneshot worker
+I0513 11:00:40.860782    5741 step_executor.go:364] StepExecutor worker(3): applying step create on urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService (preview true)
+I0513 11:00:40.860792    5741 registry.go:174] GetProvider(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93)
+I0513 11:00:40.860805    5741 provider_plugin.go:744] Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService) executing (#props=9)
+I0513 11:00:40.860814    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: __createBeforeDelete={true}
+I0513 11:00:40.860822    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: hyperV={false}
+I0513 11:00:40.860828    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: isXenon={false}
+I0513 11:00:40.860833    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: location={uksouth}
+I0513 11:00:40.860838    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: name={functionApp-appService1870875d}
+I0513 11:00:40.860844    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: perSiteScaling={false}
+I0513 11:00:40.860850    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: reserved={false}
+I0513 11:00:40.860856    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.860862    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: sku={map[name:{Y1} tier:{Dynamic}]}
+I0513 11:00:40.860872    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: name={Y1}
+I0513 11:00:40.860879    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).inputs]: tier={Dynamic}
+I0513 11:00:40.862998    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: freeOfferExpirationTime=output<string>{}
+I0513 11:00:40.863038    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: geoRegion=output<string>{}
+I0513 11:00:40.863057    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: hostingEnvironmentProfile=output<string>{}
+I0513 11:00:40.863064    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: hyperV={false}
+I0513 11:00:40.863070    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: id=output<string>{}
+I0513 11:00:40.863077    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: isSpot=output<string>{}
+I0513 11:00:40.863083    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: isXenon={false}
+I0513 11:00:40.863088    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: kind=output<string>{}
+I0513 11:00:40.863094    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: kubeEnvironmentProfile=output<string>{}
+I0513 11:00:40.863101    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: location={uksouth}
+I0513 11:00:40.863112    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: maximumElasticWorkerCount=output<string>{}
+I0513 11:00:40.863118    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: maximumNumberOfWorkers=output<string>{}
+I0513 11:00:40.863124    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: name={functionApp-appService1870875d}
+I0513 11:00:40.863130    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: numberOfSites=output<string>{}
+I0513 11:00:40.863146    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: perSiteScaling={false}
+I0513 11:00:40.863157    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: provisioningState=output<string>{}
+I0513 11:00:40.863164    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: reserved={false}
+I0513 11:00:40.863171    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: resourceGroup=output<string>{}
+I0513 11:00:40.863179    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: capabilities=output<string>{}
+I0513 11:00:40.863185    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: capacity=output<string>{}
+I0513 11:00:40.863191    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: family=output<string>{}
+I0513 11:00:40.863198    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: locations=output<string>{}
+I0513 11:00:40.863204    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: name={Y1}
+I0513 11:00:40.863211    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: size=output<string>{}
+I0513 11:00:40.863220    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: skuCapacity=output<string>{}
+I0513 11:00:40.863227    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: tier={Dynamic}
+I0513 11:00:40.863238    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: sku={map[capabilities:output<string>{} capacity:output<string>{} family:output<string>{} locations:output<string>{} name:{Y1} size:output<string>{} skuCapacity:output<string>{} tier:{Dynamic}]}
+I0513 11:00:40.863262    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: spotExpirationTime=output<string>{}
+I0513 11:00:40.863269    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: status=output<string>{}
+I0513 11:00:40.863275    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: subscription=output<string>{}
+I0513 11:00:40.863283    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: tags=output<string>{}
+I0513 11:00:40.863290    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: targetWorkerCount=output<string>{}
+I0513 11:00:40.863296    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: targetWorkerSizeId=output<string>{}
+I0513 11:00:40.863303    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: type=output<string>{}
+I0513 11:00:40.863310    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).outputs]: workerTierName=output<string>{}
+I0513 11:00:40.863327    5741 provider_plugin.go:834] Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService) success: id=; #outs=27
+I0513 11:00:40.863384    5741 step_executor.go:364] StepExecutor worker(3): step create on urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService retired
+I0513 11:00:40.863411    5741 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService
+I0513 11:00:40.863431    5741 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=azure-native:web:AppServicePlan, urn=urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService, #outs=6
+I0513 11:00:40.863443    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: hyperV={false}
+I0513 11:00:40.863451    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: isXenon={false}
+I0513 11:00:40.863457    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: location={uksouth}
+I0513 11:00:40.863465    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: name={functionApp-appService1870875d}
+I0513 11:00:40.863471    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: perSiteScaling={false}
+I0513 11:00:40.863483    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:AppServicePlan,functionApp-appService)]: reserved={false}
+I0513 11:00:40.863885    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862053    5757 provider.go:797] azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService) executing
+<{%reset%}>)
+I0513 11:00:40.863932    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862079    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: __createBeforeDelete={true}
+<{%reset%}>)
+I0513 11:00:40.863944    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862087    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: hyperV={false}
+<{%reset%}>)
+I0513 11:00:40.863953    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862090    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: isXenon={false}
+<{%reset%}>)
+I0513 11:00:40.863961    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862093    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.863967    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862096    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: name={functionApp-appService1870875d}
+<{%reset%}>)
+I0513 11:00:40.863984    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862099    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: perSiteScaling={false}
+<{%reset%}>)
+I0513 11:00:40.863991    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862101    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: reserved={false}
+<{%reset%}>)
+I0513 11:00:40.864004    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862104    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.864010    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862108    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: name={Y1}
+<{%reset%}>)
+I0513 11:00:40.864017    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862139    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: tier={Dynamic}
+<{%reset%}>)
+I0513 11:00:40.864023    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862144    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).properties]: sku={map[name:{Y1} tier:{Dynamic}]}
+<{%reset%}>)
+I0513 11:00:40.864029    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862194    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: freeOfferExpirationTime=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864041    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862202    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: geoRegion=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864052    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862205    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: hostingEnvironmentProfile=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864068    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862208    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: hyperV={false}
+<{%reset%}>)
+I0513 11:00:40.864076    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862211    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: id=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864083    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862214    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: isSpot=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864098    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862217    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: isXenon={false}
+<{%reset%}>)
+I0513 11:00:40.864105    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862222    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: kind=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864112    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862225    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: kubeEnvironmentProfile=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864119    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862228    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.864126    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862231    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: maximumElasticWorkerCount=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864134    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862234    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: maximumNumberOfWorkers=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864142    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862237    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: name={functionApp-appService1870875d}
+<{%reset%}>)
+I0513 11:00:40.864152    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862240    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: numberOfSites=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864168    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862243    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: perSiteScaling={false}
+<{%reset%}>)
+I0513 11:00:40.864175    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862246    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: provisioningState=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864184    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862249    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: reserved={false}
+<{%reset%}>)
+I0513 11:00:40.864191    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862252    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: resourceGroup=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864199    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862255    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: sku={map[capabilities:output<string>{} capacity:output<string>{} family:output<string>{} locations:output<string>{} name:{Y1} size:output<string>{} skuCapacity:output<string>{} tier:{Dynamic}]}
+<{%reset%}>)
+I0513 11:00:40.864208    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862351    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: capabilities=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864225    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862360    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: capacity=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864232    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862363    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: family=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864241    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862369    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: locations=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864248    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862372    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: name={Y1}
+<{%reset%}>)
+I0513 11:00:40.864260    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862378    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: size=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864267    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862381    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: skuCapacity=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864283    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862384    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: tier={Dynamic}
+<{%reset%}>)
+I0513 11:00:40.864292    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862388    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: spotExpirationTime=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864300    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862391    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: status=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864309    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862394    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: subscription=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864316    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862398    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: tags=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864323    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862401    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: targetWorkerCount=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864334    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862404    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: targetWorkerSizeId=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864342    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862407    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: type=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.864349    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.862410    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService).previewState]: workerTierName=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.867858    5741 source_eval.go:345] handling default provider request for package azure-native-1.64.0
+I0513 11:00:40.867901    5741 source_eval.go:403] checking if azure-native-1.64.0 should be denied
+I0513 11:00:40.867910    5741 source_eval.go:437] Did not find a config for 'pulumi'
+I0513 11:00:40.867923    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: hyperV={false}
+I0513 11:00:40.867948    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: isXenon={false}
+I0513 11:00:40.867954    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: kind={functionapp}
+I0513 11:00:40.867960    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: reserved={false}
+I0513 11:00:40.867966    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.867971    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: scmSiteAlsoStopped={false}
+I0513 11:00:40.867978    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: serverFarmId=output<string>{}
+I0513 11:00:40.867992    5741 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=azure-native:web:WebApp, name=mywebapp, custom=true, #props=7, parent=urn:pulumi:dev::azure-webapp-credentials::pulumi:pulumi:Stack::azure-webapp-credentials-dev, protect=false, provider=urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93, deps=[urn:pulumi:dev::azure-webapp-credentials::azure-native:web:AppServicePlan::functionApp-appService urn:pulumi:dev::azure-webapp-credentials::azure-native:resources:ResourceGroup::resourceGroup], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20150801:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20160801:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20180201:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20181101:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20190801:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20200601:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20200901:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20201001:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20201201:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20210101:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20210115:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20210201:WebApp::mywebapp urn:pulumi:dev::azure-webapp-credentials::azure-native:web/v20210301:WebApp::mywebapp], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0513 11:00:40.868048    5741 source_eval.go:167] EvalSourceIterator produced a registration: t=azure-native:web:WebApp,name=mywebapp,#props=7
+I0513 11:00:40.868060    5741 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0513 11:00:40.868067    5741 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0513 11:00:40.868084    5741 registry.go:174] GetProvider(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93)
+I0513 11:00:40.868096    5741 provider_plugin.go:570] Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp) executing (#olds=0,#news=7
+I0513 11:00:40.868108    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: hyperV={false}
+I0513 11:00:40.868116    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: isXenon={false}
+I0513 11:00:40.868122    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: kind={functionapp}
+I0513 11:00:40.868128    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: reserved={false}
+I0513 11:00:40.868134    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.868144    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: scmSiteAlsoStopped={false}
+I0513 11:00:40.868150    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: serverFarmId=output<string>{}
+I0513 11:00:40.868304    5741 eventsink.go:59] Fields to assign: ["urn","sku","tags","type","geoRegion","hyperV","maximumNumberOfWorkers","name","reserved","workerTierName","isSpot","maximumElasticWorkerCount","targetWorkerSizeId","id","location","perSiteScaling","targetWorkerCount","freeOfferExpirationTime","spotExpirationTime","kubeEnvironmentProfile","subscription","status","numberOfSites","kind","hostingEnvironmentProfile","isXenon","resourceGroup","provisioningState"]
+I0513 11:00:40.868329    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Fields to assign: ["urn","sku","tags","type","geoRegion","hyperV","maximumNumberOfWorkers","name","reserved","workerTierName","isSpot","maximumElasticWorkerCount","targetWorkerSizeId","id","location","perSiteScaling","targetWorkerCount","freeOfferExpirationTime","spotExpirationTime","kubeEnvironmentProfile","subscription","status","numberOfSites","kind","hostingEnvironmentProfile","isXenon","resourceGroup","provisioningState"]<{%reset%}>)
+I0513 11:00:40.871461    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: __createBeforeDelete={true}
+I0513 11:00:40.871501    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870005    5757 provider.go:312] azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp) executing
+<{%reset%}>)
+I0513 11:00:40.871524    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870024    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: hyperV={false}
+<{%reset%}>)
+I0513 11:00:40.871537    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870032    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: isXenon={false}
+<{%reset%}>)
+I0513 11:00:40.871544    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870035    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: kind={functionapp}
+<{%reset%}>)
+I0513 11:00:40.871552    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870038    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: reserved={false}
+<{%reset%}>)
+I0513 11:00:40.871560    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870041    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.871568    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870048    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: scmSiteAlsoStopped={false}
+<{%reset%}>)
+I0513 11:00:40.871573    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870051    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).news]: serverFarmId=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.871580    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870116    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: __createBeforeDelete={true}
+<{%reset%}>)
+I0513 11:00:40.871589    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870121    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: hyperV={false}
+<{%reset%}>)
+I0513 11:00:40.871596    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870124    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: isXenon={false}
+<{%reset%}>)
+I0513 11:00:40.871603    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870127    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: kind={functionapp}
+<{%reset%}>)
+I0513 11:00:40.871628    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870130    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.871639    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870137    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: name={mywebappb9e6ed73}
+<{%reset%}>)
+I0513 11:00:40.871647    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870140    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: reserved={false}
+<{%reset%}>)
+I0513 11:00:40.871653    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870143    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.871667    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870146    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: scmSiteAlsoStopped={false}
+<{%reset%}>)
+I0513 11:00:40.871675    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.870149    5757 rpc.go:74] Marshaling property for RPC[azure-native.Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).resInputs]: serverFarmId=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.871504    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: hyperV={false}
+I0513 11:00:40.871691    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: isXenon={false}
+I0513 11:00:40.871700    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: kind={functionapp}
+I0513 11:00:40.871707    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: location={uksouth}
+I0513 11:00:40.871713    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: name={mywebappb9e6ed73}
+I0513 11:00:40.871718    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: reserved={false}
+I0513 11:00:40.871724    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.871730    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: scmSiteAlsoStopped={false}
+I0513 11:00:40.871737    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: serverFarmId=output<string>{}
+I0513 11:00:40.871748    5741 provider_plugin.go:643] Provider[azure-native, 0xc0015b0360].Check(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp) success: inputs=#10 failures=#0
+I0513 11:00:40.871765    5741 step_generator.go:675] Planner decided to create 'urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp' (inputs=map[__createBeforeDelete:{true} hyperV:{false} isXenon:{false} kind:{functionapp} location:{uksouth} name:{mywebappb9e6ed73} reserved:{false} resourceGroupName:{resourceGroup592b0347} scmSiteAlsoStopped:{false} serverFarmId:output<string>{}])
+I0513 11:00:40.871792    5741 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0513 11:00:40.871801    5741 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0513 11:00:40.871813    5741 step_executor.go:364] StepExecutor worker(4): launching oneshot worker
+I0513 11:00:40.871847    5741 step_executor.go:364] StepExecutor worker(4): applying step create on urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp (preview true)
+I0513 11:00:40.871861    5741 registry.go:174] GetProvider(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93)
+I0513 11:00:40.871875    5741 provider_plugin.go:744] Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp) executing (#props=10)
+I0513 11:00:40.871887    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: __createBeforeDelete={true}
+I0513 11:00:40.871896    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: hyperV={false}
+I0513 11:00:40.871902    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: isXenon={false}
+I0513 11:00:40.871907    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: kind={functionapp}
+I0513 11:00:40.871913    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: location={uksouth}
+I0513 11:00:40.871920    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: name={mywebappb9e6ed73}
+I0513 11:00:40.871926    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: reserved={false}
+I0513 11:00:40.871932    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.871938    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: scmSiteAlsoStopped={false}
+I0513 11:00:40.871945    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).inputs]: serverFarmId=output<string>{}
+I0513 11:00:40.871478    5741 eventsink.go:59] Registering resource start: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False
+I0513 11:00:40.872027    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource start: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.874043    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: availabilityState=output<string>{}
+I0513 11:00:40.874091    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: clientAffinityEnabled=output<string>{}
+I0513 11:00:40.874103    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: clientCertEnabled=output<string>{}
+I0513 11:00:40.874110    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: clientCertExclusionPaths=output<string>{}
+I0513 11:00:40.874115    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: clientCertMode=output<string>{}
+I0513 11:00:40.874121    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: containerSize=output<string>{}
+I0513 11:00:40.874127    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: customDomainVerificationId=output<string>{}
+I0513 11:00:40.874137    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: dailyMemoryTimeQuota=output<string>{}
+I0513 11:00:40.874143    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: defaultHostName=output<string>{}
+I0513 11:00:40.874154    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: enabled=output<string>{}
+I0513 11:00:40.874161    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: enabledHostNames=output<string>{}
+I0513 11:00:40.874166    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: hostNameSslStates=output<string>{}
+I0513 11:00:40.874172    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: hostNames=output<string>{}
+I0513 11:00:40.874178    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: hostNamesDisabled=output<string>{}
+I0513 11:00:40.874189    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: hostingEnvironmentProfile=output<string>{}
+I0513 11:00:40.874195    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: httpsOnly=output<string>{}
+I0513 11:00:40.874200    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: hyperV={false}
+I0513 11:00:40.874207    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: id=output<string>{}
+I0513 11:00:40.874214    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: identity=output<string>{}
+I0513 11:00:40.874220    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: inProgressOperationId=output<string>{}
+I0513 11:00:40.874225    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: isDefaultContainer=output<string>{}
+I0513 11:00:40.874232    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: isXenon={false}
+I0513 11:00:40.874238    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: keyVaultReferenceIdentity=output<string>{}
+I0513 11:00:40.874244    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: kind={functionapp}
+I0513 11:00:40.874250    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: lastModifiedTimeUtc=output<string>{}
+I0513 11:00:40.874256    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: location={uksouth}
+I0513 11:00:40.874262    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: maxNumberOfWorkers=output<string>{}
+I0513 11:00:40.874273    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: name={mywebappb9e6ed73}
+I0513 11:00:40.874281    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: outboundIpAddresses=output<string>{}
+I0513 11:00:40.874287    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: possibleOutboundIpAddresses=output<string>{}
+I0513 11:00:40.874294    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: redundancyMode=output<string>{}
+I0513 11:00:40.874300    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: repositorySiteName=output<string>{}
+I0513 11:00:40.874307    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: reserved={false}
+I0513 11:00:40.874314    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: resourceGroup=output<string>{}
+I0513 11:00:40.874321    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: scmSiteAlsoStopped={false}
+I0513 11:00:40.874332    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: serverFarmId=output<string>{}
+I0513 11:00:40.874342    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: siteConfig=output<string>{}
+I0513 11:00:40.874350    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: slotSwapStatus=output<string>{}
+I0513 11:00:40.874392    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: state=output<string>{}
+I0513 11:00:40.874398    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: storageAccountRequired=output<string>{}
+I0513 11:00:40.874405    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: suspendedTill=output<string>{}
+I0513 11:00:40.874412    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: tags=output<string>{}
+I0513 11:00:40.874419    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: targetSwapSlot=output<string>{}
+I0513 11:00:40.874426    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: trafficManagerHostNames=output<string>{}
+I0513 11:00:40.874443    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: type=output<string>{}
+I0513 11:00:40.874467    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: usageState=output<string>{}
+I0513 11:00:40.874473    5741 rpc.go:274] Unmarshaling property for RPC[Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).outputs]: virtualNetworkSubnetId=output<string>{}
+I0513 11:00:40.874485    5741 provider_plugin.go:834] Provider[azure-native, 0xc0015b0360].Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp) success: id=; #outs=47
+I0513 11:00:40.874554    5741 step_executor.go:364] StepExecutor worker(4): step create on urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp retired
+I0513 11:00:40.874602    5741 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp
+I0513 11:00:40.874622    5741 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=azure-native:web:WebApp, urn=urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp, #outs=7
+I0513 11:00:40.874638    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: hyperV={false}
+I0513 11:00:40.874703    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: isXenon={false}
+I0513 11:00:40.874722    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: kind={functionapp}
+I0513 11:00:40.874733    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: location={uksouth}
+I0513 11:00:40.874775    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: name={mywebappb9e6ed73}
+I0513 11:00:40.874782    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: reserved={false}
+I0513 11:00:40.874788    5741 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(azure-native:web:WebApp,mywebapp)]: scmSiteAlsoStopped={false}
+I0513 11:00:40.874831    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872564    5757 provider.go:797] azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp) executing
+<{%reset%}>)
+I0513 11:00:40.874897    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872586    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: __createBeforeDelete={true}
+<{%reset%}>)
+I0513 11:00:40.874915    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872592    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: hyperV={false}
+<{%reset%}>)
+I0513 11:00:40.874923    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872595    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: isXenon={false}
+<{%reset%}>)
+I0513 11:00:40.874933    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872598    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: kind={functionapp}
+<{%reset%}>)
+I0513 11:00:40.874940    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872606    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.874946    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872609    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: name={mywebappb9e6ed73}
+<{%reset%}>)
+I0513 11:00:40.876322    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872612    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: reserved={false}
+<{%reset%}>)
+I0513 11:00:40.876372    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872615    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.876385    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872618    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: scmSiteAlsoStopped={false}
+<{%reset%}>)
+I0513 11:00:40.876392    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872622    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).properties]: serverFarmId=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876400    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872660    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: availabilityState=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876408    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872665    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: clientAffinityEnabled=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876418    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872668    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: clientCertEnabled=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876429    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872671    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: clientCertExclusionPaths=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876436    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872674    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: clientCertMode=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876447    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872677    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: containerSize=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876490    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872680    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: customDomainVerificationId=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876511    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872683    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: dailyMemoryTimeQuota=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876524    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872686    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: defaultHostName=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876538    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872690    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: enabled=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876545    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872693    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: enabledHostNames=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876554    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872696    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: hostNameSslStates=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876567    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872699    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: hostNames=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876574    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872704    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: hostNamesDisabled=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876587    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872709    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: hostingEnvironmentProfile=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876598    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872712    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: httpsOnly=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876605    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872715    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: hyperV={false}
+<{%reset%}>)
+I0513 11:00:40.876611    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872718    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: id=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876620    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872723    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: identity=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876626    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872726    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: inProgressOperationId=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876633    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872729    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: isDefaultContainer=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876639    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872732    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: isXenon={false}
+<{%reset%}>)
+I0513 11:00:40.876646    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872735    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: keyVaultReferenceIdentity=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876655    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872738    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: kind={functionapp}
+<{%reset%}>)
+I0513 11:00:40.876663    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872741    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: lastModifiedTimeUtc=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876670    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872744    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: location={uksouth}
+<{%reset%}>)
+I0513 11:00:40.876680    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872747    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: maxNumberOfWorkers=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876689    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872786    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: name={mywebappb9e6ed73}
+<{%reset%}>)
+I0513 11:00:40.876696    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872793    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: outboundIpAddresses=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876708    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872797    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: possibleOutboundIpAddresses=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876717    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872800    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: redundancyMode=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876723    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872807    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: repositorySiteName=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876730    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872810    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: reserved={false}
+<{%reset%}>)
+I0513 11:00:40.876737    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872813    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: resourceGroup=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876745    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872816    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: scmSiteAlsoStopped={false}
+<{%reset%}>)
+I0513 11:00:40.876755    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872819    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: serverFarmId=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876763    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872823    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: siteConfig=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876769    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872826    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: slotSwapStatus=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876778    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872829    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: state=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876786    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872833    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: storageAccountRequired=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876797    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872836    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: suspendedTill=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876809    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872839    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: tags=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876864    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872843    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: targetSwapSlot=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876873    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872846    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: trafficManagerHostNames=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876885    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872849    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: type=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876901    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872852    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: usageState=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.876913    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.872855    5757 rpc.go:74] Marshaling property for RPC[azure-native.Create(urn:pulumi:dev::azure-webapp-credentials::azure-native:web:WebApp::mywebapp).previewState]: virtualNetworkSubnetId=output<string>{}
+<{%reset%}>)
+I0513 11:00:40.878503    5741 eventsink.go:59] Preparing resource: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False
+I0513 11:00:40.878548    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Preparing resource: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.885334    5741 eventsink.go:59] Registering resource monitor end: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False
+I0513 11:00:40.885373    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor end: t=pulumi:pulumi:Stack, name=azure-webapp-credentials-dev, custom=False, remote=False<{%reset%}>)
+I0513 11:00:40.885550    5741 source_eval.go:345] handling default provider request for package azure-native-1.64.0
+I0513 11:00:40.885570    5741 source_eval.go:403] checking if azure-native-1.64.0 should be denied
+I0513 11:00:40.885578    5741 source_eval.go:437] Did not find a config for 'pulumi'
+I0513 11:00:40.885588    5741 registry.go:174] GetProvider(urn:pulumi:dev::azure-webapp-credentials::pulumi:providers:azure-native::default_1_64_0::58de3b2b-e851-443b-b203-bf39ec446d93)
+I0513 11:00:40.885606    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.Invoke(azure-native:web:listWebAppPublishingCredentials)]: name={mywebappb9e6ed73}
+I0513 11:00:40.885616    5741 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.Invoke(azure-native:web:listWebAppPublishingCredentials)]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.885630    5741 source_eval.go:663] ResourceMonitor.Invoke received: tok=azure-native:web:listWebAppPublishingCredentials #args=2
+I0513 11:00:40.885643    5741 provider_plugin.go:1243] Provider[azure-native, 0xc0015b0360].Invoke(azure-native:web:listWebAppPublishingCredentials) executing (#args=2)
+I0513 11:00:40.885652    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Invoke(azure-native:web:listWebAppPublishingCredentials).args]: name={mywebappb9e6ed73}
+I0513 11:00:40.885677    5741 rpc.go:74] Marshaling property for RPC[Provider[azure-native, 0xc0015b0360].Invoke(azure-native:web:listWebAppPublishingCredentials).args]: resourceGroupName={resourceGroup592b0347}
+I0513 11:00:40.888296    5741 eventsink.go:59] Prepared resource: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False
+I0513 11:00:40.888333    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Prepared resource: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.888393    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.887578    5757 provider.go:178] azure-native.Invoke(azure-native:web:listWebAppPublishingCredentials) executing
+<{%reset%}>)
+I0513 11:00:40.888406    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.887594    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Invoke(azure-native:web:listWebAppPublishingCredentials).args]: name={mywebappb9e6ed73}
+<{%reset%}>)
+I0513 11:00:40.888416    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.887600    5757 rpc.go:274] Unmarshaling property for RPC[azure-native.Invoke(azure-native:web:listWebAppPublishingCredentials).args]: resourceGroupName={resourceGroup592b0347}
+<{%reset%}>)
+I0513 11:00:40.888430    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:40.887782    5757 provider.go:1811] HTTP Request Begin POST https://management.azure.com/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list?api-version=2020-12-01 ===================================================
+<{%reset%}>)
+I0513 11:00:40.888444    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>POST /subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list?api-version=2020-12-01 HTTP/1.1
+<{%reset%}>)
+I0513 11:00:40.888451    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Host: management.azure.com
+<{%reset%}>)
+I0513 11:00:40.888460    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>User-Agent: Go/go1.17.9 (amd64-darwin) go-autorest/v14.2.1 pulumi-azure-native/v1.64.0 pid-a90539d8-a7a6-5826-95c4-1fbef22d4b22
+<{%reset%}>)
+I0513 11:00:40.888467    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Content-Length: 4
+<{%reset%}>)
+I0513 11:00:40.888477    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Content-Type: application/json; charset=utf-8
+<{%reset%}>)
+I0513 11:00:40.888483    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>null
+<{%reset%}>)
+I0513 11:00:40.888493    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>===================================================== HTTP Request End POST https://management.azure.com/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list?api-version=2020-12-01
+<{%reset%}>)
+I0513 11:00:40.890621    5741 eventsink.go:59] Registering resource monitor start: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False
+I0513 11:00:40.890658    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor start: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.895370    5741 eventsink.go:59] Fields to assign: ["state","storageAccountRequired","identity","urn","dailyMemoryTimeQuota","keyVaultReferenceIdentity","tags","outboundIpAddresses","customDomainVerificationId","type","hyperV","redundancyMode","clientCertMode","usageState","name","reserved","inProgressOperationId","isDefaultContainer","trafficManagerHostNames","serverFarmId","siteConfig","defaultHostName","id","location","hostNameSslStates","hostNames","virtualNetworkSubnetId","clientCertExclusionPaths","clientAffinityEnabled","maxNumberOfWorkers","targetSwapSlot","slotSwapStatus","lastModifiedTimeUtc","suspendedTill","clientCertEnabled","httpsOnly","scmSiteAlsoStopped","kind","containerSize","hostNamesDisabled","possibleOutboundIpAddresses","hostingEnvironmentProfile","enabled","enabledHostNames","isXenon","resourceGroup","repositorySiteName","availabilityState"]
+I0513 11:00:40.895431    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Fields to assign: ["state","storageAccountRequired","identity","urn","dailyMemoryTimeQuota","keyVaultReferenceIdentity","tags","outboundIpAddresses","customDomainVerificationId","type","hyperV","redundancyMode","clientCertMode","usageState","name","reserved","inProgressOperationId","isDefaultContainer","trafficManagerHostNames","serverFarmId","siteConfig","defaultHostName","id","location","hostNameSslStates","hostNames","virtualNetworkSubnetId","clientCertExclusionPaths","clientAffinityEnabled","maxNumberOfWorkers","targetSwapSlot","slotSwapStatus","lastModifiedTimeUtc","suspendedTill","clientCertEnabled","httpsOnly","scmSiteAlsoStopped","kind","containerSize","hostNamesDisabled","possibleOutboundIpAddresses","hostingEnvironmentProfile","enabled","enabledHostNames","isXenon","resourceGroup","repositorySiteName","availabilityState"]<{%reset%}>)
+I0513 11:00:40.899188    5741 eventsink.go:59] Registering resource start: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False
+I0513 11:00:40.899226    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource start: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.900823    5741 eventsink.go:59] Preparing resource: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False
+I0513 11:00:40.900859    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Preparing resource: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.902911    5741 eventsink.go:59] Invoking function: token=azure-native:web:listWebAppPublishingCredentials asynchronously
+I0513 11:00:40.902945    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Invoking function: token=azure-native:web:listWebAppPublishingCredentials asynchronously<{%reset%}>)
+I0513 11:00:40.907223    5741 eventsink.go:59] Registering resource monitor end: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False
+I0513 11:00:40.907260    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor end: t=azure-native:resources:ResourceGroup, name=resourceGroup, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.909946    5741 eventsink.go:59] Prepared resource: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False
+I0513 11:00:40.910021    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Prepared resource: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.911966    5741 eventsink.go:59] Registering resource monitor start: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False
+I0513 11:00:40.912017    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor start: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.913706    5741 eventsink.go:59] Registering resource monitor end: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False
+I0513 11:00:40.913745    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor end: t=azure-native:web:AppServicePlan, name=functionApp-appService, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.916567    5741 eventsink.go:59] Prepared resource: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False
+I0513 11:00:40.916604    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Prepared resource: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.919140    5741 eventsink.go:59] Registering resource monitor start: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False
+I0513 11:00:40.919173    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor start: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.923089    5741 eventsink.go:59] Registering resource monitor end: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False
+I0513 11:00:40.923122    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor end: t=azure-native:web:WebApp, name=mywebapp, custom=True, remote=False<{%reset%}>)
+I0513 11:00:40.926405    5741 eventsink.go:59] Invoke RPC prepared: token=azure-native:web:listWebAppPublishingCredentials
+I0513 11:00:40.926454    5741 eventsink.go:62] eventSink::Debug(<{%reset%}>Invoke RPC prepared: token=azure-native:web:listWebAppPublishingCredentials<{%reset%}>)
+I0513 11:00:41.291386    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:41.291114    5757 provider.go:1834] HTTP Response Begin POST [https://management.azure.com/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list?api-version=2020-12-01 ===================================================
+<{%reset%}>)
+I0513 11:00:41.291476    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>HTTP/1.1 404 Not Found
+<{%reset%}>)
+I0513 11:00:41.291516    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Content-Length: 229
+<{%reset%}>)
+I0513 11:00:41.291534    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Cache-Control: no-cache
+<{%reset%}>)
+I0513 11:00:41.291554    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Content-Type: application/json; charset=utf-8
+<{%reset%}>)
+I0513 11:00:41.291569    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Date: Fri, 13 May 2022 10:00:43 GMT
+<{%reset%}>)
+I0513 11:00:41.291596    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Expires: -1
+<{%reset%}>)
+I0513 11:00:41.291612    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Pragma: no-cache
+<{%reset%}>)
+I0513 11:00:41.291630    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Strict-Transport-Security: max-age=31536000; includeSubDomains
+<{%reset%}>)
+I0513 11:00:41.291645    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Content-Type-Options: nosniff
+<{%reset%}>)
+I0513 11:00:41.291663    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Ms-Correlation-Request-Id: 5a938c78-2d4a-4681-a0b1-d036ae71c2ba
+<{%reset%}>)
+I0513 11:00:41.291678    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Ms-Failure-Cause: gateway
+<{%reset%}>)
+I0513 11:00:41.291709    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Ms-Request-Id: 5a938c78-2d4a-4681-a0b1-d036ae71c2ba
+<{%reset%}>)
+I0513 11:00:41.291726    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Ms-Routing-Request-Id: UKSOUTH:20220513T100043Z:5a938c78-2d4a-4681-a0b1-d036ae71c2ba
+<{%reset%}>)
+I0513 11:00:41.291745    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>{"error":{"code":"ResourceNotFound","message":"The Resource 'Microsoft.Web/sites/mywebappb9e6ed73' under resource group 'resourceGroup592b0347' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix"}}
+<{%reset%}>)
+I0513 11:00:41.291786    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>===================================================== HTTP Response End POST https://management.azure.com/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list?api-version=2020-12-01
+<{%reset%}>)
+I0513 11:00:41.291809    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>I0513 11:00:41.291232    5757 provider.go:1834] HTTP Response Begin POST [https://management.azure.com/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list?api-version=2020-12-01 ===================================================
+<{%reset%}>)
+I0513 11:00:41.291828    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>HTTP/1.1 404 Not Found
+<{%reset%}>)
+I0513 11:00:41.291855    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Content-Length: 229
+<{%reset%}>)
+I0513 11:00:41.291871    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Cache-Control: no-cache
+<{%reset%}>)
+I0513 11:00:41.291888    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Content-Type: application/json; charset=utf-8
+<{%reset%}>)
+I0513 11:00:41.291910    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Date: Fri, 13 May 2022 10:00:43 GMT
+<{%reset%}>)
+I0513 11:00:41.291928    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Expires: -1
+<{%reset%}>)
+I0513 11:00:41.291943    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Pragma: no-cache
+<{%reset%}>)
+I0513 11:00:41.291959    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>Strict-Transport-Security: max-age=31536000; includeSubDomains
+<{%reset%}>)
+I0513 11:00:41.291973    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Content-Type-Options: nosniff
+<{%reset%}>)
+I0513 11:00:41.291993    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Ms-Correlation-Request-Id: 5a938c78-2d4a-4681-a0b1-d036ae71c2ba
+<{%reset%}>)
+I0513 11:00:41.292009    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Ms-Failure-Cause: gateway
+<{%reset%}>)
+I0513 11:00:41.292026    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Ms-Request-Id: 5a938c78-2d4a-4681-a0b1-d036ae71c2ba
+<{%reset%}>)
+I0513 11:00:41.292051    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>X-Ms-Routing-Request-Id: UKSOUTH:20220513T100043Z:5a938c78-2d4a-4681-a0b1-d036ae71c2ba
+<{%reset%}>)
+I0513 11:00:41.292070    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>{"error":{"code":"ResourceNotFound","message":"The Resource 'Microsoft.Web/sites/mywebappb9e6ed73' under resource group 'resourceGroup592b0347' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix"}}
+<{%reset%}>)
+I0513 11:00:41.292087    5741 eventsink.go:78] eventSink::Infoerr(<{%reset%}>===================================================== HTTP Response End POST https://management.azure.com/subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list?api-version=2020-12-01
+<{%reset%}>)
+I0513 11:00:41.292856    5741 provider_plugin.go:1271] Provider[azure-native, 0xc0015b0360].Invoke(azure-native:web:listWebAppPublishingCredentials) failed: request failed /subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list: autorest/azure: Service returned an error. Status=404 Code="ResourceNotFound" Message="The Resource 'Microsoft.Web/sites/mywebappb9e6ed73' under resource group 'resourceGroup592b0347' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix"
+I0513 11:00:41.362832    5741 eventsink.go:86] eventSink::Error(<{%reset%}>Running program '/Users/piers/github.com/pierskarsenbarg/scratchpad/azure-webapp-credentials/bin/Debug/netcoreapp3.1/azure-webapp-credentials.dll' failed with an unhandled exception:
+Grpc.Core.RpcException: Status(StatusCode="Unknown", Detail="invocation of azure-native:web:listWebAppPublishingCredentials returned an error: request failed /subscriptions/32b9cb2e-69be-4040-80a6-02cd6b2cc5ec/resourceGroups/resourceGroup592b0347/providers/Microsoft.Web/sites/mywebappb9e6ed73/config/publishingcredentials/list: autorest/azure: Service returned an error. Status=404 Code="ResourceNotFound" Message="The Resource 'Microsoft.Web/sites/mywebappb9e6ed73' under resource group 'resourceGroup592b0347' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix"")
+   at async Task<InvokeResponse> Pulumi.GrpcMonitor.InvokeAsync(ResourceInvokeRequest request)
+   at async Task<SerializationResult> Pulumi.Deployment.InvokeRawAsync(string token, SerializationResult argsSerializationResult, InvokeOptions options)
+   at async Task<OutputData<T>> Pulumi.Deployment.RawInvoke<T>(string token, InvokeArgs args, InvokeOptions options)
+   at async Task<OutputData<U>> Pulumi.Output<T>.ApplyHelperAsync<U>(Task<OutputData<T>> dataTask, Func<T, Output<U>> func)
+   at async Task<OutputData<object>> Pulumi.Output<T>.Pulumi.IOutput.GetDataAsync()
+   at async Task<object> Pulumi.Serialization.Serializer.SerializeAsync(string ctx, object prop, bool keepResources, bool keepOutputValues)
+   at async Task<RawSerializationResult> Pulumi.Deployment.SerializeFilteredPropertiesRawAsync(string label, IDictionary<string, object> args, Predicate<string> acceptKey, bool keepResources, bool keepOutputValues)
+   at async Task<SerializationResult> Pulumi.Deployment.SerializeFilteredPropertiesAsync(string label, IDictionary<string, object> args, Predicate<string> acceptKey, bool keepResources, bool keepOutputValues)
+   at async Task<OutputData<U>> Pulumi.Output<T>.ApplyHelperAsync<U>(Task<OutputData<T>> dataTask, Func<T, Output<U>> func)
+   at async Task<Struct> Pulumi.Deployment.SerializeAllPropertiesAsync(string label, IDictionary<string, object> args, bool keepResources, bool keepOutputValues)
+   at async Task Pulumi.Deployment.RegisterResourceOutputsAsync(Resource resource, Output<IDictionary<string, object>> outputs)<{%reset%}>)
+I0513 11:00:41.389311    5741 langruntime_plugin.go:200] langhost[dotnet].RunPlan(pwd=/Users/piers/github.com/pierskarsenbarg/scratchpad/azure-webapp-credentials,program=.,...,dryrun=true) success: progerr=
+I0513 11:00:41.390401    5741 source_eval.go:185] EvalSourceIterator ended with bail.
+I0513 11:00:41.390439    5741 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? true, Bail)
+I0513 11:00:41.390458    5741 step_executor.go:364] StepExecutor worker(-1): StepExecutor.waitForCompletion(): waiting for worker threads to exit
+I0513 11:00:41.390468    5741 step_executor.go:364] StepExecutor worker(-2): worker exiting due to cancellation
+I0513 11:00:41.390477    5741 step_executor.go:364] StepExecutor worker(-1): StepExecutor.waitForCompletion(): worker threads all exited
+I0513 11:00:41.390488    5741 deployment_executor.go:303] deploymentExecutor.Execute(...): step executor has completed
+I0513 11:00:41.390517    5741 deployment_executor.go:161] deploymentExecutor.Execute(...): exiting provider canceller
+I0513 11:00:41.438825    5741 ignore.go:44] Explicitly ignoring and discarding error: rpc error: code = Canceled desc = grpc: the client connection is closing
+I0513 11:00:41.438897    5741 host.go:417] Error closing 'dotnet' language plugin during shutdown; ignoring: 1 error occurred:
+	* operation not permitted
+
+I0513 11:00:41.438946    5741 update.go:195] *** Update(preview=true) complete ***
