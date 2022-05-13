@@ -35,14 +35,5 @@ class MyStack : Stack
             Name = app.Name,
             ResourceGroupName = resourceGroup.Name
         });
-
-        this.PublishingUserName = credentials.Apply(x => x.PublishingUserName);
-        this.PublishingPassword = credentials.Apply(x => x.PublishingPassword);
     }
-
-    [Output]
-    public Output<string> PublishingUserName { get; set; }
-
-    [Output]
-    public Output<string?> PublishingPassword { get; set; }
 }
